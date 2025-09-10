@@ -13,7 +13,7 @@ body, html {
 
 /* Background Image */
 body {
-  background: url("bg.png") no-repeat center center/cover;
+  background: url("img/bg.png") no-repeat center center/cover;
   position: relative;
 }
 
@@ -55,6 +55,7 @@ body::after {
 
 .icons a:hover {
   color: #1da1f2;
+  transform: scale(1.1);
 }
 
 /* Hero Section */
@@ -88,4 +89,39 @@ body::after {
   height: 7rem;
   z-index: 10;
   filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+
+  .icons {
+    margin-top: 10px;
+    margin-right: -25px;
+  }
+
+  .icons a {
+    margin-left: 0;
+    margin-right: 15px;
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    padding: 0 25px;
+    align-items: center;
+    text-align: center;
+    height: 75vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .corner-img {
+    height: 4rem;
+    bottom: 10px;
+    right: -20px;
+  }
 }
